@@ -19,6 +19,12 @@ public enum CameraResultType: String {
     case dataURL = "dataUrl"
 }
 
+public enum CameraFlashMode: String {
+    case on = "on"
+    case off = "off"
+    case auto = "auto"
+}
+
 struct CameraPromptText {
     let title: String
     let photoAction: String
@@ -46,6 +52,7 @@ public struct CameraSettings {
     var shouldCorrectOrientation = true
     var saveToGallery = false
     var presentationStyle = UIModalPresentationStyle.fullScreen
+    var flashMode = UIImagePickerController.CameraFlashMode.auto
 }
 
 public struct CameraResult {

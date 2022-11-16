@@ -205,6 +205,16 @@ public class CameraPlugin: CAPPlugin {
                                                    photoAction: call.getString("promptLabelPhoto"),
                                                    cameraAction: call.getString("promptLabelPicture"),
                                                    cancelAction: call.getString("promptLabelCancel"))
+       
+        let flashString = call.getString("flashMode")
+        if flashString == CameraFlashMode.on.rawValue {
+            settings.flashMode = .on
+        } else if flashString == CameraFlashMode.off.rawValue {
+            settings.flashMode = .off
+        } else if flashString == CameraFlashMode.auto.rawValue {
+            settings.flashMode = .auto
+        }
+        
         if let styleString = call.getString("presentationStyle"), styleString == "popover" {
             settings.presentationStyle = .popover
         } else {
@@ -456,7 +466,7 @@ private extension CameraPlugin {
         }
     }
 
-    func presentCameraPicker() {
+func presentCameraPicker() {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = self.settings.allowEditing
@@ -467,6 +477,7 @@ private extension CameraPlugin {
         } else if settings.direction == .front, UIImagePickerController.isCameraDeviceAvailable(.front) {
             picker.cameraDevice = .front
         }
+        picker.cameraFlashMode = self.settings.flashMode
         // present
         picker.modalPresentationStyle = settings.presentationStyle
         if settings.presentationStyle == .popover {
