@@ -181,6 +181,11 @@ export interface ImageOptions {
    * @since 1.0.0
    */
   promptLabelPicture?: string;
+
+  /**
+   * Whether to set flash on, off or auto when open camera
+   */
+  flashMode?: CameraFlashMode;
 }
 
 export interface Photo {
@@ -350,6 +355,12 @@ export enum CameraResultType {
   Uri = 'uri',
   Base64 = 'base64',
   DataUrl = 'dataUrl',
+}
+
+export enum CameraFlashMode {
+  On = 'on',
+  Off = 'off',
+  Auto = 'auto',
 }
 
 /**
