@@ -258,6 +258,7 @@ Request camera and photo album permissions
 | **`promptLabelCancel`**  | <code>string</code>                                           | Text value to use when displaying the prompt. iOS only: The label of the 'cancel' button.                                                                                                                                                                                  | <code>: 'Cancel'</code>             | 1.0.0 |
 | **`promptLabelPhoto`**   | <code>string</code>                                           | Text value to use when displaying the prompt. The label of the button to select a saved image.                                                                                                                                                                             | <code>: 'From Photos'</code>        | 1.0.0 |
 | **`promptLabelPicture`** | <code>string</code>                                           | Text value to use when displaying the prompt. The label of the button to open the camera.                                                                                                                                                                                  | <code>: 'Take Picture'</code>       | 1.0.0 |
+| **`flashMode`**          | <code><a href="#cameraflashmode">CameraFlashMode</a></code>   | Whether to set flash on, off or auto when open camera                                                                                                                                                                                                                      |                                     |       |
 
 
 #### GalleryPhotos
@@ -349,5 +350,14 @@ Request camera and photo album permissions
 | ----------- | -------------------- |
 | **`Rear`**  | <code>'REAR'</code>  |
 | **`Front`** | <code>'FRONT'</code> |
+
+
+#### CameraFlashMode
+
+| Members    | Value               |
+| ---------- | ------------------- |
+| **`On`**   | <code>'on'</code>   |
+| **`Off`**  | <code>'off'</code>  |
+| **`Auto`** | <code>'auto'</code> |
 
 </docgen-api>
