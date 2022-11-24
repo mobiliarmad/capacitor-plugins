@@ -12,13 +12,13 @@ This repository contains the official Capacitor plugins maintained by the Capaci
 
 ## Plugins
 
-| Package | Source | Version |
-| --- | --- | --- |
+| Package | Source | Version | Mobi-Package |
+| --- | --- | --- | --- |
 | [`@capacitor/action-sheet`](https://capacitorjs.com/docs/apis/action-sheet) | [`./action-sheet`](./action-sheet) | [![npm badge](https://img.shields.io/npm/v/@capacitor/action-sheet?style=flat-square)](https://www.npmjs.com/package/@capacitor/action-sheet)
 | [`@capacitor/app-launcher`](https://capacitorjs.com/docs/apis/app-launcher) | [`./app-launcher`](./app-launcher) | [![npm badge](https://img.shields.io/npm/v/@capacitor/app-launcher?style=flat-square)](https://www.npmjs.com/package/@capacitor/app-launcher)
 | [`@capacitor/app`](https://capacitorjs.com/docs/apis/app) | [`./app`](./app) | [![npm badge](https://img.shields.io/npm/v/@capacitor/app?style=flat-square)](https://www.npmjs.com/package/@capacitor/app)
 | [`@capacitor/browser`](https://capacitorjs.com/docs/apis/browser) | [`./browser`](./browser) | [![npm badge](https://img.shields.io/npm/v/@capacitor/browser?style=flat-square)](https://www.npmjs.com/package/@capacitor/browser)
-| [`@capacitor/camera`](https://capacitorjs.com/docs/apis/camera) | [`./camera`](./camera) | [![npm badge](https://img.shields.io/npm/v/@capacitor/camera?style=flat-square)](https://www.npmjs.com/package/@capacitor/camera)
+| [`@capacitor/camera`](https://capacitorjs.com/docs/apis/camera) | [`./camera`](./camera) | [![npm badge](https://img.shields.io/npm/v/@capacitor/camera?style=flat-square)](https://www.npmjs.com/package/@capacitor/camera)| @capacitor-mobi/camera
 | [`@capacitor/clipboard`](https://capacitorjs.com/docs/apis/clipboard) | [`./clipboard`](./clipboard) | [![npm badge](https://img.shields.io/npm/v/@capacitor/clipboard?style=flat-square)](https://www.npmjs.com/package/@capacitor/clipboard)
 | [`@capacitor/device`](https://capacitorjs.com/docs/apis/device) | [`./device`](./device) | [![npm badge](https://img.shields.io/npm/v/@capacitor/device?style=flat-square)](https://www.npmjs.com/package/@capacitor/device)
 | [`@capacitor/dialog`](https://capacitorjs.com/docs/apis/dialog) | [`./dialog`](./dialog) | [![npm badge](https://img.shields.io/npm/v/@capacitor/dialog?style=flat-square)](https://www.npmjs.com/package/@capacitor/dialog)
