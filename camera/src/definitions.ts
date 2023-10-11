@@ -65,6 +65,7 @@ export interface CameraPlugin {
 export interface ImageOptions {
   /**
    * The quality of image to return as JPEG, from 0-100
+   * Note: This option is only supported on Android and iOS
    *
    * @since 1.0.0
    */
@@ -197,6 +198,7 @@ export interface Photo {
   /**
    * The url starting with 'data:image/jpeg;base64,' and the base64 encoded string representation of the image, if using CameraResultType.DataUrl.
    *
+   * Note: On web, the file format could change depending on the browser.
    * @since 1.0.0
    */
   dataUrl?: string;
@@ -224,7 +226,8 @@ export interface Photo {
    * The format of the image, ex: jpeg, png, gif.
    *
    * iOS and Android only support jpeg.
-   * Web supports jpeg and png. gif is only supported if using file input.
+   * Web supports jpeg, png and gif, but the exact availability may vary depending on the browser.
+   * gif is only supported if `webUseInput` is set to `true` or if `source` is set to `Photos`.
    *
    * @since 1.0.0
    */
@@ -283,6 +286,7 @@ export interface GalleryPhoto {
 export interface GalleryImageOptions {
   /**
    * The quality of image to return as JPEG, from 0-100
+   * Note: This option is only supported on Android and iOS.
    *
    * @since 1.2.0
    */
