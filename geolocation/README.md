@@ -45,9 +45,9 @@ This plugin will use the following project variables (defined in your app's `var
 import { Geolocation } from '@capacitor/geolocation';
 
 const printCurrentPosition = async () => {
-    const coordinates = await Geolocation.getCurrentPosition();
+  const coordinates = await Geolocation.getCurrentPosition();
 
-    console.log('Current position:', coordinates);
+  console.log('Current position:', coordinates);
 };
 ```
 
@@ -202,17 +202,6 @@ Request location permissions.  Will throw if system location services are disabl
 
 
 ### Type Aliases
-
-
-#### Position
-
-A <a href="#position">Position</a> is an array of coordinates.
-https://tools.ietf.org/html/rfc7946#section-3.1.1
-Array should contain between two and three elements.
-The previous GeoJSON specification allowed more elements (e.g., which could be used to represent M values),
-but the current specification only allows X, Y, and (optionally) Z to be defined.
-
-<code>number[]</code>
 
 
 #### WatchPositionCallback

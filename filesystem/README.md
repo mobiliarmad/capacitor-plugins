@@ -45,40 +45,40 @@ Additionally, the Filesystem API supports using full `file://` paths, or reading
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 
 const writeSecretFile = async () => {
-    await Filesystem.writeFile({
-        path: 'secrets/text.txt',
-        data: 'This is a test',
-        directory: Directory.Documents,
-        encoding: Encoding.UTF8,
-    });
+  await Filesystem.writeFile({
+    path: 'secrets/text.txt',
+    data: 'This is a test',
+    directory: Directory.Documents,
+    encoding: Encoding.UTF8,
+  });
 };
 
 const readSecretFile = async () => {
-    const contents = await Filesystem.readFile({
-        path: 'secrets/text.txt',
-        directory: Directory.Documents,
-        encoding: Encoding.UTF8,
-    });
+  const contents = await Filesystem.readFile({
+    path: 'secrets/text.txt',
+    directory: Directory.Documents,
+    encoding: Encoding.UTF8,
+  });
 
-    console.log('secrets:', contents);
+  console.log('secrets:', contents);
 };
 
 const deleteSecretFile = async () => {
-    await Filesystem.deleteFile({
-        path: 'secrets/text.txt',
-        directory: Directory.Documents,
-    });
+  await Filesystem.deleteFile({
+    path: 'secrets/text.txt',
+    directory: Directory.Documents,
+  });
 };
 
 const readFilePath = async () => {
-    // Here's an example of reading a file with a full file path. Use this to
-    // read binary data (base64 encoded) from plugins that return File URIs, such as
-    // the Camera.
-    const contents = await Filesystem.readFile({
-        path: 'file:///var/mobile/Containers/Data/Application/22A433FD-D82D-4989-8BE6-9FC49DEA20BB/Documents/text.txt',
-    });
+  // Here's an example of reading a file with a full file path. Use this to
+  // read binary data (base64 encoded) from plugins that return File URIs, such as
+  // the Camera.
+  const contents = await Filesystem.readFile({
+    path: 'file:///var/mobile/Containers/Data/Application/22A433FD-D82D-4989-8BE6-9FC49DEA20BB/Documents/text.txt',
+  });
 
-    console.log('data:', contents);
+  console.log('data:', contents);
 };
 ```
 
@@ -387,9 +387,9 @@ Add a listener to file download progress events.
 
 #### ReadFileResult
 
-| Prop       | Type             | Description                                                                                                                            | Since |
-| ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| **`data`** | <code>any</code> | The representation of the data contained in the file Note: Blob is only available on Web. On native, the data is returned as a string. | 1.0.0 |
+| Prop       | Type                        | Description                                                                                                                            | Since |
+| ---------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **`data`** | <code>string \| Blob</code> | The representation of the data contained in the file Note: Blob is only available on Web. On native, the data is returned as a string. | 1.0.0 |
 
 
 #### ReadFileOptions
@@ -413,7 +413,7 @@ Add a listener to file download progress events.
 | Prop            | Type                                            | Description                                                                                                                                               | Default            | Since |
 | --------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----- |
 | **`path`**      | <code>string</code>                             | The path of the file to write                                                                                                                             |                    | 1.0.0 |
-| **`data`**      | <code>any</code>                                | The data to write Note: Blob data is only supported on Web.                                                                                               |                    | 1.0.0 |
+| **`data`**      | <code>string \| Blob</code>                     | The data to write Note: Blob data is only supported on Web.                                                                                               |                    | 1.0.0 |
 | **`directory`** | <code><a href="#directory">Directory</a></code> | The <a href="#directory">`Directory`</a> to store the file in                                                                                             |                    | 1.0.0 |
 | **`encoding`**  | <code><a href="#encoding">Encoding</a></code>   | The encoding to write the file in. If not provided, data is written as base64 encoded. Pass <a href="#encoding">Encoding.UTF8</a> to write data as string |                    | 1.0.0 |
 | **`recursive`** | <code>boolean</code>                            | Whether to create any missing parent directories.                                                                                                         | <code>false</code> | 1.0.0 |
