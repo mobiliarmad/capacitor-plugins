@@ -1153,13 +1153,6 @@ but the current specification only allows X, Y, and (optionally) Z to be defined
 <code>number[]</code>
 
 
-#### Marker
-
-Supports markers of either either "legacy" or "advanced" types.
-
-<code>google.maps.<a href="#marker">Marker</a> | google.maps.marker.AdvancedMarkerElement</code>
-
-
 ### Enums
 
 

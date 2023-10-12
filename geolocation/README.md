@@ -45,9 +45,9 @@ This plugin will use the following project variables (defined in your app's `var
 import { Geolocation } from '@capacitor/geolocation';
 
 const printCurrentPosition = async () => {
-  const coordinates = await Geolocation.getCurrentPosition();
+    const coordinates = await Geolocation.getCurrentPosition();
 
-  console.log('Current position:', coordinates);
+    console.log('Current position:', coordinates);
 };
 ```
 
