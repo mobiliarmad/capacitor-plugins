@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.1...@capacitor/browser@6.0.2) (2024-08-08)
+
+**Note:** Version bump only for package @capacitor/browser
+
+## [6.0.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0...@capacitor/browser@6.0.1) (2024-06-13)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-rc.1...@capacitor/browser@6.0.0) (2024-04-15)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0-rc.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-rc.0...@capacitor/browser@6.0.0-rc.1) (2024-03-25)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0-rc.0](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-beta.1...@capacitor/browser@6.0.0-rc.0) (2024-02-07)
+
+### Features
+
+- **browser:** implement close() method for android ([60e0267](https://github.com/ionic-team/capacitor-plugins/commit/60e026776da6fe00ec48356c3cdf55a860a9685b))
+
+# [6.0.0-beta.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-beta.0...@capacitor/browser@6.0.0-beta.1) (2023-12-14)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0-beta.0](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-alpha.2...@capacitor/browser@6.0.0-beta.0) (2023-12-13)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0-alpha.2](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@6.0.0-alpha.1...@capacitor/browser@6.0.0-alpha.2) (2023-11-15)
+
+**Note:** Version bump only for package @capacitor/browser
+
+# [6.0.0-alpha.1](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@5.0.6...@capacitor/browser@6.0.0-alpha.1) (2023-11-08)
+
+### Features
+
+- **browser:** support other custom tabs providers ([#1669](https://github.com/ionic-team/capacitor-plugins/issues/1669)) ([b9b68c2](https://github.com/ionic-team/capacitor-plugins/commit/b9b68c2cc3344ab7bad2d005b10d5b554e310dde))
+
 # [5.1.0](https://github.com/ionic-team/capacitor-plugins/compare/@capacitor/browser@5.0.6...@capacitor/browser@5.1.0) (2023-09-14)
 
 ### Features
