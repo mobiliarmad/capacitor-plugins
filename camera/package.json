@@ -13,7 +13,7 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "CapacitorCamera.podspec"
+    "CapacitorMobiCamera.podspec"
   ],
   "author": "Ionic <hi@ionicframework.com>",
   "license": "MIT",
@@ -44,7 +44,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorCamera.podspec --allow-warnings"
+    "publish:cocoapod": "pod trunk push CapacitorMobiCamera.podspec --allow-warnings"
   },
   "devDependencies": {
     "@capacitor/android": "^6.0.0",
