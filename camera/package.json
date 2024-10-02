@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor/camera",
+  "name": "@capacitor-mobi/camera",
   "version": "7.0.0",
   "description": "The Camera API provides the ability to take a photo with the camera or choose an existing one from the photo album.",
   "main": "dist/plugin.cjs.js",
@@ -19,10 +19,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/capacitor-plugins.git"
+    "url": "https://github.com/mobiliarmad/capacitor-plugins.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/capacitor-plugins/issues"
+    "url": "https://github.com/mobiliarmad/capacitor-plugins/issues"
   },
   "keywords": [
     "capacitor",
